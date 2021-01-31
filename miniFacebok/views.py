@@ -11,4 +11,6 @@ def login_page(request):
 def registration_page(request):
     return render(request,"registration_form.html")
 
+# Just for test
+
 
