@@ -4,5 +4,11 @@ from django.shortcuts import render
 def home_page(request):
     return render(request,"facebook_page.html")
 
-def index_page(request):
-    return render(request,"index.html")
+def login_page(request):
+    return render(request,"login_form.html")
+
+
+def registration_page(request):
+    return render(request,"registration_form.html")
+
+
