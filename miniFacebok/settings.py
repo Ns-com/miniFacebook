@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 
 
 #just some random lines
+#some more lines
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
