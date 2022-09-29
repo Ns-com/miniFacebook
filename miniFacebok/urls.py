@@ -16,6 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from miniFacebok.settings import MEDIA_ROOT
+
 from .views import home_page,login_page,registration_page
 
 
@@ -27,5 +29,8 @@ urlpatterns = [
     path('',home_page,name="home"),
     path('login',login_page,name="login"),
     path('registration',registration_page,name='registration')
-] +  static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-# fgfg
+] +  static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) # for static files and static root
+
+# for media root and media files
+
+urlpatterns+=static(settings.MEDIA_URL,documenent_root=MEDIA_ROOT)
