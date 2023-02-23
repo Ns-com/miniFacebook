@@ -13,4 +13,4 @@ def registration_page(request):
 
 # Just for test
 
-
+# just random lines
